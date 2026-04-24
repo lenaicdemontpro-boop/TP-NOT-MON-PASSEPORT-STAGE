@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP - Mon Passeport Stage - BTS SIO SLAM</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; color: #333; }
+        h1, h2, h3 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #bdc3c7; padding: 10px; text-align: left; }
+        th { background-color: #ecf0f1; }
+        .todo { background-color: #fff3cd; padding: 10px; border-left: 5px solid #ffc107; font-style: italic; }
+        .ia-declaration { background-color: #d1ecf1; padding: 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TP : Mon Passeport Stage</h1>
+        <p><strong>Étudiant :</strong> lenaic</p>
+        <p><strong>GitHub :</strong> https://github.com/lenaicdemontpro-boop/TP-NOT-MON-PASSEPORT-STAGE</p>
+        <p><strong>Date :</strong> 24 Avril 2026</p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>Partie 1 : Analyse de l'entreprise DataNovA</h2>
+        
+        <h3>1.1 - Analyse des données et risques</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Donnée traitée</th>
+                    <th>Niveau de sensibilité</th>
+                    <th>Justification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nom, Prénom, Date de naissance</td>
+                    <td>Normale</td>
+                    <td>Données d'identification classiques permettant d'individualiser le dossier patient.</td>
+                </tr>
+                <tr>
+                    <td>Numéro de Sécurité Sociale (NIR)</td>
+                    <td>Très sensible</td>
+                    <td>Identifiant unique national, soumis à des conditions de traitement strictes (donnée d'État).</td>
+                </tr>
+                <tr>
+                    <td>Historique médical / Ordonnances</td>
+                    <td>Sensible</td>
+                    <td>Données de santé au sens du RGPD (catégorie particulière), nécessitant une protection renforcée.</td>
+                </tr>
+                <tr>
+                    <td>Identifiants de connexion (Médecins/Staff)</td>
+                    <td>Sensible</td>
+                    <td>Leur compromission permet un accès illégitime à l'ensemble de la base de données médicale.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>1.2 - Réglementations applicables</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Réglementation</th>
+                    <th>Pourquoi elle s'applique</th>
+                    <th>Ce qu'elle impose concrètement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>RGPD</strong> (Règlement Général sur la Protection des Données)</td>
+                    <td>DataNovA traite des données personnelles de citoyens européens à Lyon[cite: 25, 30].</td>
+                    <td>Tenue d'un registre de traitements, droit d'accès/effacement pour les patients, et sécurité accrue.</td>
+                </tr>
+                <tr>
+                    <td><strong>HDS</strong> (Hébergement de Données de Santé)</td>
+                    <td>L'activité principale est une plateforme SaaS de suivi patient (Santé numérique)[cite: 25, 26].</td>
+                    <td>L'hébergeur (OVH ici) et l'infogéreur doivent être certifiés pour garantir la souveraineté et la sécurité des données médicales.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Partie 2 : Tableau de compétences + preuves GitHub</h2>
+        <p class="todo">Complétez la colonne "Preuve" avec vos liens réels pour obtenir les points[cite: 44, 45].</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Compétence Bloc 1</th>
+                    <th>Ce que je sais faire concrètement</th>
+                    <th>Preuve GitHub (fichier / repo)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gérer le patrimoine informatique</td>
+                    <td>Utilisation de Git pour le versionnage : commits, branches, et push sur repo distant.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mettre à disposition un service</td>
+                    <td>Développement d'une API ou interface avec Flask et test en environnement local.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Travailler en mode projet</td>
+                    <td>Organisation des tâches via un tableau Kanban ou GitHub Issues.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Respecter les règles d'utilisation</td>
+                    <td>Utilisation de fichiers .env pour les secrets et conformité RGPD.</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Boîte Noire (Vécu réel)</h2>
+        <div class="todo">
+            <h3>Question B1 : Dépôt principal</h3>
+            <p><strong>URL :</strong> github.com/[VOTRE_LIEN]</p>
+            <p><strong>Explication :</strong> [Décrivez ici en 3-4 lignes votre projet phare du semestre - cite: 54]</p>
+
+            <h3>Question B2 : Difficulté technique</h3>
+            <p><strong>Problème :</strong> </p>
+            <p><strong>Résolution :</strong></p>
+
+            <h3>Question B3 : Livrable Sécurité</h3>
+            <p><strong>Livrable :</strong></p>
+            <p><strong>Utilité :</strong> </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Partie 3 : Lettre de motivation technique</h2>
+        <div style="border: 1px solid #ccc; padding: 20px; background: #fff;">
+            <p>Madame, Monsieur,</p>
+            <p>
+                Actuellement en première année de BTS SIO option SLAM, je souhaite postuler en tant que stagiaire développeur au sein de <strong>DataNovA</strong>. Passionné par le développement web et les enjeux de la <strong>santé numérique</strong>, votre plateforme SaaS de suivi patient correspond parfaitement à mon projet professionnel.
+            </p>
+            <p>
+                Ce semestre, j'ai acquis des compétences solides en développement <strong>Back-end avec Flask</strong> et en gestion de bases de données, ce qui me permettrait de contribuer efficacement à l'évolution de vos services. De plus, je maîtrise le <strong>versionnage sous Git</strong>, garantissant une intégration fluide au sein de votre équipe de deux développeurs[cite: 32]. 
+            </p>
+            <p>
+                Sensibilisé aux problématiques du <strong>RGPD</strong> et de la sécurité des données sensibles, je saurai appliquer les bonnes pratiques de développement nécessaires à votre assistant IA et à la protection des dossiers médicaux de vos clients.
+            </p>
+            <p>Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.</p>
+            <p><strong>[VOTRE SIGNATURE]</strong></p>
+        </div>
+    </section>
+
+    <section class="ia-declaration">
+        <h2>Déclaration d'usage de l'IA</h2>
+        <p><strong>Outil utilisé :</strong> Gemini (Google)</p>
+        <p><strong>Parties concernées :</strong> Structure HTML, analyse de l'entreprise (Partie 1), rédaction de la lettre de motivation (Partie 3).</p>
+        <p><strong>Modifications apportées :</strong> [Ex: J'ai corrigé les arguments de la lettre pour correspondre à mes vraies technos et j'ai ajouté mes liens GitHub personnels].</p>
+    </section>
+
+</body>
+</html>
